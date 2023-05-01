@@ -1,0 +1,30 @@
+
+* { box-sizing: border-box; } 
+body { font-family: "Pretendard-Regular", sans-serif; color: #666; font-weight: 400; line-height: 1; } 
+a { text-decoration: none; color: #666; } 
+/* a:hover { color: #1428a0; } */
+h3 { margin-bottom: min(1.562vw, 30px);color: #222; font-weight: bold; font-size: 2.5rem; } 
+input:focus { outline:1px solid #1428a0}
+
+
+/* layout */
+#wrap { display:block; position: relative; max-width: 1920px; width: 100%; height: 100%; margin: 0 auto; overflow: hidden; } 
+#header { margin: 0 auto; height: 90px; position: relative;left: 0; width: 100%; } 
+#container { position: relative; width: 100vw; height: 100%; top: 0px; } 
+.inner_wrap { padding: min(6.77vw, 130px) 0 min(8.333vw, 160px);; margin: 0 auto; width:66vw; height: 100%; } 
+
+#footer { position: relative;left: 0; bottom:0;margin: 0 auto; padding: min(2.864vw, 55px) 0; background-color: #121212; z-index: 10; } 
+
+.footer_inner { margin: 0 auto; width: auto; padding: 0 min(4.166vw, 80px); width: 100%; max-width: 1920px; } 
+
+/* header */
+.curtain { display: none; z-index: 60; position: fixed; left: 0; top: 0; width: 100%; height: 100vh; background-color: #000; opacity: 0.5; } 
+.curtain.on { display: block; } 
+.header_wrap { z-index: 100; position: relative;left: 0; top: 0; width: 100%;height: auto; background-color: #fff; transition: height 0.1s ease-in-out; } 
+.header_wrap.on { position: fixed; } 
+.header_inner { display: flex; position: relative; margin: 0 auto; padding: 0 min(4.166vw, 80px); width: 100%; height: 90px; max-width: 1920px; background-color: #fff; } 
+
+/* logo */
+.logo { position: absolute;left: min(4.166vw, 80px);top: 27px;width: min(12.239vw, 235px);height: 80px; } 
+.logo a { position: absolute;width: 100%;height: 36px;background: url(../images/logo.svg)no-repeat 0 0;background-size: 100% auto;text-indent: -9999px;overflow: hidden; } 
+
