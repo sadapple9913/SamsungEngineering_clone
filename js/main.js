@@ -158,55 +158,6 @@ playBtn.addEventListener('click', e =>{
   }
 });
 
-// let flag = 0;
-
-// playBtn.addEventListener('click', function(e) {
-//   e.preventDefault();
-
-//   const videos = document.querySelectorAll('video');
-//   if (videos.length > 0) {
-//     if (flag === 0) {
-//       playBtn.classList.remove('on', 'active');
-//       clearTimeout(autoBnn);
-//       for (let i = 0; i < videos.length; i++) {
-//         videos[i].play();
-//       }
-//       flag = 1;
-//     } else {
-//       playBtn.classList.add('on', 'active');
-//       for (let i = 0; i < videos.length; i++) {
-//         videos[i].pause();
-//         autoBnn = setTimeout(autoBanner, videos[i].duration - videos[i].currentTime);
-//       }
-//       flag = 0;
-//     }
-//   } else {
-//     console.log('현재 포커스된 video 요소가 없습니다.');
-//   }
-// });
-
-
-// for (let i = 0; i < videos.length; i++) {
-//   const video = videos[i];
-  
-//   video.addEventListener('loadedmetadata', function() {
-//     console.log(`총 비디오 재생 시간: ${video.duration} 초`);
-//   });
-
-//   const intervalId = setInterval(function() {
-//     var remainingTime = Math.round(video.duration - video.currentTime);
-//     console.log(`남은 시간: ${remainingTime} 초`);
-//     console.log(`현재 비디오 시간: ${video.currentTime} 초`);
-
-//     if (remainingTime <= 0) {
-//       clearInterval(intervalId);
-//       console.log(`비디오 재생이 종료되었습니다.`);
-//       video.pause(); // 비디오 재생을 일시정지합니다.
-//     }
-//   }, 1000);
-// }
-
-
 //business
 
 const businessMenu = document.querySelectorAll(".business_title_wrap>ul>li");
