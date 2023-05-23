@@ -31,13 +31,13 @@ div.srch_box { display: flex; justify-content: right; width: 100%; height: 100%;
 
 .country li,.area li { display: block; font-size: 17.8px; } 
 
-.country>li>ul , .area>li>ul { display: none; z-index: 1; position: absolute; top: 70px; left: 0; width: 100%; height: 250px; border:1px solid #ccc; overflow-y:auto; background: #fff; padding: min(0.677vw, 13px) min(0.781vw, 15px); } 
+.country>li>ul , .area>li>ul { display: none; z-index: 1; position: absolute; top: 70px; left: 0; width: 100%; height: 250px; border:1px solid #ccc; overflow-y:hidden; background: #fff; padding: min(0.677vw, 13px) min(0.781vw, 15px); } 
 
 .area>li>ul:first-of-type { height: 58px; } 
 .area>li>ul:first-of-type { overflow:visible; } 
 
 
-.country>li>ul.on , .area>li>ul.on { display: block; } 
+.country.on>li>ul , .area.on .korea { display: block; } 
 
 
 .srch_box>ul>li>ul>li { height: 50px; } 

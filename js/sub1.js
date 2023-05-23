@@ -7,7 +7,6 @@ const header = document.querySelector(".header_wrap")
 const gnbmenus = document.querySelectorAll('nav>ul>li>ul')
 const newsbtn = document.querySelector('.news_top')
 const news = document.querySelector('.news')
-const area = document.querySelector('.area')
 const btnplay = document.querySelector('.btn_play')
 
 function noneAll(value) {
@@ -210,19 +209,20 @@ toggleBtn.addEventListener('click' , e=>{
   quickMenu.classList.toggle('open');
 })
 
+const country = document.querySelector('.country');
+const area = document.querySelector('.area');
 
-var ulElements = document.querySelectorAll('ul');
-  
-for(var i = 0; i < ulElements.length; i++) {
-  ulElements[i].addEventListener('click', function(e) {
-    if(e.target.tagName.toLowerCase() === 'ul') {
-      if(e.target.className === 'on') {
-        e.target.className = '';
-      } else {
-        e.target.className = 'on';
-      }
-    }
-  });
-}
+
+country.addEventListener("click", (e) => {
+  e.preventDefault();
+  country.classList.toggle("on");
+})
+
+area.addEventListener("click", (e) => {
+  e.preventDefault();
+  area.classList.toggle("on");
+})
+
+
 
 });
