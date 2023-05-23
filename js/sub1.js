@@ -210,4 +210,19 @@ toggleBtn.addEventListener('click' , e=>{
   quickMenu.classList.toggle('open');
 })
 
+
+var ulElements = document.querySelectorAll('ul');
+  
+for(var i = 0; i < ulElements.length; i++) {
+  ulElements[i].addEventListener('click', function(e) {
+    if(e.target.tagName.toLowerCase() === 'ul') {
+      if(e.target.className === 'on') {
+        e.target.className = '';
+      } else {
+        e.target.className = 'on';
+      }
+    }
+  });
+}
+
 });
